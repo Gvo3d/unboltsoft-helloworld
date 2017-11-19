@@ -7,6 +7,14 @@ public class Main {
         } catch (NullPointerException e){
             name = null;
         }
-        System.out.println("Hello "+ name!=null? name : "World!");
+        
+        //name!=null ? name : "World!"
+        if(name == null) { // not corect
+            name = name; //not corect
+        } else () {
+            name = "World!";
+        }
+        
+        System.out.println("Hello " + name);
     }
 }
